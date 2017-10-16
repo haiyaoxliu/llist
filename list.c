@@ -19,6 +19,15 @@ void _print(struct node *p) {
   printf("NULL\n");
 }
 
+void _free(struct node *p) {
+  while (p) {
+    struct node *q = p -> next;
+    free(p);
+    p = q;
+  }
+  return NULL;
+}
+
 struct node * _insert(struct node *p, int d) {
   struct node* n = (struct node*)malloc(sizeof(struct node));
   n -> d = d;
