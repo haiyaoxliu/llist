@@ -1,3 +1,7 @@
+//accidentally deleted /.gitsubmodules
+//rolled back too many changes so I had to re-add _free to my code and recommit
+//sorry
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -36,7 +40,7 @@ struct node * _insert(struct node *p, int d) {
 }
 
 int main() {
-  //test
+  //test!
   struct node *test = NULL;
   int i;
   for (i = 0; i < 3; i++) {
